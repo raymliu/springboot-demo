@@ -1,0 +1,28 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overriden by the Spring profile you use,
+# for example application-dev.yml if you use the "dev" profile.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+server:
+  port: 8989
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+  datasource:
+    driver-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    url: jdbc:mysql://localhost:3306/redisdemo?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+
+
+
+
